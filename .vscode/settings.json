@@ -1,5 +1,4 @@
 {
     "r.plot.useHttpgd": true,
     "r.bracketedPaste": true,
-    //"r.rterm.linux": "/opt/conda/envs/r-renv-devcon/bin/radian"
 }
