@@ -1,6 +1,5 @@
-FROM rocker/r-ver:4.2.1
-# 
-# ENV S6_VERSION=v2.1.0.2
+FROM rocker/r-ver:4.2.2
+
 ENV OS_TYPE=aarch64
 ENV RENV_VERSION=0.16.0
 
@@ -56,9 +55,3 @@ RUN echo "conda activate $CONDA_ENV" >> ~/.bashrc
 
 # install RENV
 RUN R --vanilla -s -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'));remotes::install_github('rstudio/renv@${RENV_VERSION}')"
-
-# 
-# 
-# 
-# COPY requirements.txt ./
-# 
